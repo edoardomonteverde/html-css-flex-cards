@@ -1,5 +1,79 @@
-*{
+* {
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
+
+:root {
+    --title-color:#e53270;
+    --card-bg-color:#0f0e17;
+    --text-color-dark:#0f0e17;
+    --bg-color:#fffffe;
+    --text-color-light:#fffffe;
+    --email-color:#15329a;
+}
+
+body{
+    background-color: var(--bg-color);
+    font-family:Rubik;
+}
+
+.container{
+    margin: 0 auto;
+    padding:4rem;
+}
+
+header{
+    padding:1.5rem 0rem 2.5rem;
+    text-align: center;
+
+}
+
+.title-team{
+    color: var(--title-color);
+    font-style: strong;
+    
+}
+
+.team-overview{
+    padding-bottom: 2.5rem;
+    text-align: center;
+}
+
+.team-cards-area{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.teammate-card{
+    background-color: var(--card-bg-color);
+    color: var(--text-color-light);
+    flex-basis: calc(33.33% - 20px);
+    display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+.teammate-photo{
+   width:30%;
+}
+
+.teammate-info{
+    width: 70%;
+    padding: 1rem;
+}
+
+
+
+h3.teammate-name,p.teammate-role,p.teammate-email {
+    margin-bottom:0.5rem;
+}
+
+p.teammate-email {
+    color: var(--email-color);
+}
+
+
